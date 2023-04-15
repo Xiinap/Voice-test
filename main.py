@@ -2,6 +2,8 @@ import pyttsx3
 
 engine = pyttsx3.init()
 
+name = input('Введите ваше имя:\n')
+engine.say('Введите ваше имя')
 count = 0
 
 q1 = 'Бразилия'
@@ -17,9 +19,10 @@ q8_1 = '21'
 q9 = 'разговор'
 q10 = '0'
 
-engine.say('1. Назовите столицу Бразилии ')
+engine.say('первый вопрос')
+engine.say('Назовите столицу Бразилии ')
 engine.runAndWait()
-first_q = input()
+first_q = input(f'{name}, вводите ваш ответ:\n')
 if first_q == q1:
     engine.say('Правильно')
     count += 1
@@ -29,9 +32,10 @@ else:
     engine.say(f'Правильный ответ {q1}')
     engine.runAndWait()
 
-engine.say('2. Назовите корень из ста ')
+engine.say('второй вопрос')
+engine.say('Назовите корень из ста ')
 engine.runAndWait()
-second_q = input()
+second_q = input(f'{name}, вводите ваш ответ:\n')
 if second_q == q2:
     engine.say('Правильно')
     count += 1
@@ -41,9 +45,10 @@ else:
     engine.say(f'Правильный ответ {q2}')
     engine.runAndWait()
 
-engine.say('3. Назавите страну с наибольшим количеством населения ')
+engine.say('третий вопрос')
+engine.say('Назавите страну с наибольшим количеством населения ')
 engine.runAndWait()
-third_q = input()
+third_q = input(f'{name}, вводите ваш ответ:\n')
 if third_q == q3:
     engine.say('Правильно')
     count += 1
@@ -52,10 +57,11 @@ else:
     engine.say(f'Неправильно')
     engine.say(f'Правильный ответ {q3}')
     engine.runAndWait()
-
-engine.say('4. Назавите страну с самым большим военным бюджетом')
+    
+engine.say('четвёртый вопрос')
+engine.say('Назавите страну с самым большим военным бюджетом')
 engine.runAndWait()
-fourth_q = input()
+fourth_q = input(f'{name}, вводите ваш ответ:\n')
 if fourth_q == q4:
     engine.say('Правильно')
     count += 1
@@ -67,10 +73,11 @@ else:
     engine.say(f'Неправильно')
     engine.say(f'Правильный ответ {q4}')
     engine.runAndWait()
-
-engine.say('5. Какой корень у 25 в квадрате?')
+    
+engine.say('пятый вопрос')
+engine.say('Какой корень у 25 в квадрате?')
 engine.runAndWait()
-fifth_q = input()
+fifth_q = input(f'{name}, вводите ваш ответ:\n')
 if fifth_q == q5:
     engine.say('Правильно')
     count += 1
@@ -80,11 +87,17 @@ else:
     engine.say(f'Правильный ответ {q5}')
     engine.runAndWait()
 
-engine.say('Теперь перейдём к тестовой части.(Указать нужно только букву)')
+engine.say('Теперь перейдём к тестовой части')
+engine.say('Указать нужно только букву')
 engine.runAndWait()
-engine.say('6. Какой герой мультфильма живёт в ананасе под водой? а)Камбала    б)Немо  в)Рик и Морти    г)Губка Боб Квадратные Штаны')
+engine.say('шестой вопрос')
+engine.say('Какой герой мультфильма живёт в ананасе под водой')
+engine.say('а   Камбала')
+engine.say('б   Немо')
+engine.say('в   Рик и Морти')
+engine.say('г   Губка Боб Квадратные Штаны')
 engine.runAndWait()
-sixth_q = input()
+sixth_q = input(f'{name}, вводите ваш ответ:\n')
 if sixth_q == q6:
     engine.say('Правильно')
     count += 1
@@ -94,9 +107,14 @@ else:
     engine.say(f'Правильный ответ {q6}')
     engine.runAndWait()
 
-engine.say('7. Какая страна производит больше всего кофе в мире? а)Колумбия    б)Индонезия  в)Бразилия    г)Вьетнам')
+engine.say('седьмой вопрос')
+engine.say('Какая страна производит больше всего кофе в мире? а)Колумбия    б)Индонезия  в)Бразилия    г)Вьетнам')
+engine.say('а   Колумбия')
+engine.say('б   Индонезиям')
+engine.say('в   Бразилия')
+engine.say('г   Вьетнам')
 engine.runAndWait()
-seventh_q = input('')
+seventh_q = input(f'{name}, вводите ваш ответ:\n')
 if seventh_q == q7:
     engine.say('Правильно')
     count += 1
@@ -108,9 +126,12 @@ else:
 
 engine.say('Теперь перейдём к логическим задачам')
 engine.runAndWait()
-engine.say('8. На столе лежат две монеты, в сумме они дают 3 рубля, но одна из них - НЕ 1 рубль?.Ответ дайте в формате двузначного числа.(5 монет и 5 монет - 55)')
+engine.say('восьмой вопрос')
+engine.say('На столе лежат две монеты, в сумме они дают 3 рубля, но одна из них - НЕ 1 рубль')
+engine.say('Ответ дайте в формате двузначного числа.(5 монет и 5 монет - 55)')
+engine.say('Пример   5 монет и 5 монет - 55')
 engine.runAndWait()
-eighth_q = input()
+eighth_q = input(f'{name}, вводите ваш ответ:\n')
 if eighth_q == q8:
     engine.say('Правильно')
     count += 1
@@ -124,9 +145,10 @@ else:
     engine.say(f'Правильный ответ {q8} или {q8_1}')
     engine.runAndWait()
 
-engine.say('9. Что можно завязать, но нельзя развязать?')
+engine.say('девятый вопрос')
+engine.say('Что можно завязать  но нельзя развязать?')
 engine.runAndWait()
-ninth_q = input()
+ninth_q = input(f'{name}, вводите ваш ответ:\n')
 if ninth_q == q9:
     engine.say('Правильно')
     count += 1
@@ -136,9 +158,10 @@ else:
     engine.say(f'Правильный ответ {q9}')
     engine.runAndWait()
 
-engine.say('10. С какой скоростью км в час должна двигаться собака, чтобы не слышать звона сковородки, привязанного к её хвосту?Ответ дайте цифрой(со скоростью 5км/ч - 5)')
+engine.say('десятый вопрос')
+engine.say('С какой скоростью км в час должна двигаться собака, чтобы не слышать звона сковородки, привязанного к её хвосту?Ответ дайте цифрой(со скоростью 5км/ч - 5)')
 engine.runAndWait()
-tenth_q = input()
+tenth_q = input(f'{name}, вводите ваш ответ:\n')
 if tenth_q == q10:
     engine.say('Правильно')
     count += 1
@@ -155,13 +178,13 @@ else:
 #     engine.runAndWait()
     
 if count >= 3:
-    engine.say(f'{count} из десяти  это как-то маловато   иди учись')
+    engine.say(f'{name}, {count} из десяти  это как-то маловато   иди учись')
     engine.runAndWait()
 elif count > 3 and count <= 7:
-    engine.say(f'{count} из десяти  это нормальный результат')
+    engine.say(f'{name}, {count} из десяти  это нормальный результат')
     engine.runAndWait()
 elif count > 7 and count <= 10:
-    engine.say(f'{count} из десяти  это отличный результат')
+    engine.say(f'{name}, {count} из десяти  это отличный результат')
     engine.runAndWait()
 
 engine.runAndWait()
