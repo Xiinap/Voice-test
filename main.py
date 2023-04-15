@@ -251,12 +251,6 @@ while True:
             engine.say(f'Правильный ответ {q10}')
             engine.runAndWait()
 
-        # engine.say(f'Вы правильно ответили на {count} вопросов')
-        # engine.runAndWait()
-        # if count != 10:
-        #     engine.say(f'Неправильных ответов {10-count}')
-        #     engine.runAndWait()
-
         if count >= 3:
             engine.say(f'{name}, {count} из десяти  это как-то маловато   иди учись')
             engine.runAndWait()
