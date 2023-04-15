@@ -20,6 +20,7 @@ q9 = 'разговор'
 q10 = '0'
 
 engine.say('первый вопрос')
+engine.runAndWait()
 engine.say('Назовите столицу Бразилии ')
 engine.runAndWait()
 first_q = input(f'{name}, вводите ваш ответ:\n')
@@ -33,6 +34,7 @@ else:
     engine.runAndWait()
 
 engine.say('второй вопрос')
+engine.runAndWait()
 engine.say('Назовите корень из ста ')
 engine.runAndWait()
 second_q = input(f'{name}, вводите ваш ответ:\n')
@@ -46,6 +48,7 @@ else:
     engine.runAndWait()
 
 engine.say('третий вопрос')
+engine.runAndWait()
 engine.say('Назавите страну с наибольшим количеством населения ')
 engine.runAndWait()
 third_q = input(f'{name}, вводите ваш ответ:\n')
@@ -59,6 +62,7 @@ else:
     engine.runAndWait()
     
 engine.say('четвёртый вопрос')
+engine.runAndWait()
 engine.say('Назавите страну с самым большим военным бюджетом')
 engine.runAndWait()
 fourth_q = input(f'{name}, вводите ваш ответ:\n')
@@ -75,6 +79,7 @@ else:
     engine.runAndWait()
     
 engine.say('пятый вопрос')
+engine.runAndWait()
 engine.say('Какой корень у 25 в квадрате?')
 engine.runAndWait()
 fifth_q = input(f'{name}, вводите ваш ответ:\n')
@@ -88,13 +93,18 @@ else:
     engine.runAndWait()
 
 engine.say('Теперь перейдём к тестовой части')
+engine.runAndWait()
 engine.say('Указать нужно только букву')
 engine.runAndWait()
 engine.say('шестой вопрос')
 engine.say('Какой герой мультфильма живёт в ананасе под водой')
+engine.runAndWait()
 engine.say('а   Камбала')
+engine.runAndWait()
 engine.say('б   Немо')
+engine.runAndWait()
 engine.say('в   Рик и Морти')
+engine.runAndWait()
 engine.say('г   Губка Боб Квадратные Штаны')
 engine.runAndWait()
 sixth_q = input(f'{name}, вводите ваш ответ:\n')
@@ -108,10 +118,15 @@ else:
     engine.runAndWait()
 
 engine.say('седьмой вопрос')
+engine.runAndWait()
 engine.say('Какая страна производит больше всего кофе в мире? а)Колумбия    б)Индонезия  в)Бразилия    г)Вьетнам')
+engine.runAndWait()
 engine.say('а   Колумбия')
+engine.runAndWait()
 engine.say('б   Индонезиям')
+engine.runAndWait()
 engine.say('в   Бразилия')
+engine.runAndWait()
 engine.say('г   Вьетнам')
 engine.runAndWait()
 seventh_q = input(f'{name}, вводите ваш ответ:\n')
@@ -128,7 +143,9 @@ engine.say('Теперь перейдём к логическим задачам
 engine.runAndWait()
 engine.say('восьмой вопрос')
 engine.say('На столе лежат две монеты, в сумме они дают 3 рубля, но одна из них - НЕ 1 рубль')
+engine.runAndWait()
 engine.say('Ответ дайте в формате двузначного числа.(5 монет и 5 монет - 55)')
+engine.runAndWait()
 engine.say('Пример   5 монет и 5 монет - 55')
 engine.runAndWait()
 eighth_q = input(f'{name}, вводите ваш ответ:\n')
@@ -146,6 +163,7 @@ else:
     engine.runAndWait()
 
 engine.say('девятый вопрос')
+engine.runAndWait()
 engine.say('Что можно завязать  но нельзя развязать?')
 engine.runAndWait()
 ninth_q = input(f'{name}, вводите ваш ответ:\n')
@@ -159,6 +177,7 @@ else:
     engine.runAndWait()
 
 engine.say('десятый вопрос')
+engine.runAndWait()
 engine.say('С какой скоростью км в час должна двигаться собака, чтобы не слышать звона сковородки, привязанного к её хвосту?Ответ дайте цифрой(со скоростью 5км/ч - 5)')
 engine.runAndWait()
 tenth_q = input(f'{name}, вводите ваш ответ:\n')
