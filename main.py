@@ -49,18 +49,25 @@ while True:
     else:
         count = 0
 
-        q1 = 'Бразилия'
+        q1 = 'Бразилиа'
+        q1_1 = 'бразилиа'
         q2 = '10'
         q3 = 'Индия'
+        q3_1 = 'индия'
         q4 = 'США'
-        q4_2 = 'сша'
         q4_1 = 'Америка'
+        q4_2 = 'сша'
+        q4_3 = 'Сша'
+        q4_1_2 = 'америка'
         q5 = '25'
         q6 = 'г'
+        q6_1 = 'Г'
         q7 = 'в'
+        q7_1 = 'В'
         q8 = '12'
         q8_1 = '21'
         q9 = 'разговор'
+        q9_1 = 'Разговор'
         q10 = '0'
 
         engine.say('первый вопрос')
@@ -68,7 +75,7 @@ while True:
         engine.say('Назовите столицу Бразилии ')
         engine.runAndWait()
         first_q = input(f'{name}, вводите ваш ответ:\n')
-        if first_q == q1:
+        if first_q == q1 or first_q == q1_1:
             engine.say('Правильно')
             count += 1
             engine.runAndWait()
@@ -96,7 +103,7 @@ while True:
         engine.say('Назавите страну с наибольшим количеством населения ')
         engine.runAndWait()
         third_q = input(f'{name}, вводите ваш ответ:\n')
-        if third_q == q3:
+        if third_q == q3 or third_q == q3_1:
             engine.say('Правильно')
             count += 1
             engine.runAndWait()
@@ -110,11 +117,11 @@ while True:
         engine.say('Назавите страну с самым большим военным бюджетом')
         engine.runAndWait()
         fourth_q = input(f'{name}, вводите ваш ответ:\n')
-        if fourth_q == q4 or fourth_q == q4_2:
+        if fourth_q == q4 or fourth_q == q4_2 or fourth_q == q4_3:
             engine.say('Правильно')
             count += 1
             engine.runAndWait()
-        elif fourth_q == q4_1:
+        elif fourth_q == q4_1 or fourth_q == q4_1_2:
             engine.say('Америка это континент, а не страна')
             engine.runAndWait()
         else:
@@ -156,7 +163,7 @@ while True:
         engine.say('Губка Боб Квадратные Штаны')
         engine.runAndWait()
         sixth_q = input(f'{name}, вводите ваш ответ:\n')
-        if sixth_q == q6:
+        if sixth_q == q6 or sixth_q == q6_1:
             engine.say('Правильно')
             count += 1
             engine.runAndWait()
@@ -182,13 +189,13 @@ while True:
         engine.say('Вьетнам')
         engine.runAndWait()
         seventh_q = input(f'{name}, вводите ваш ответ:\n')
-        if seventh_q == q7:
+        if seventh_q == q7 or seventh_q == q7_1:
             engine.say('Правильно')
             count += 1
             engine.runAndWait()
         else:
             engine.say(f'Неправильно')
-            engine.say(f'Правильный ответ {q7}')
+            engine.say(f'Правильный ответ вэ')
             engine.runAndWait()
 
         engine.say('Теперь перейдём к логическим задачам')
@@ -202,11 +209,7 @@ while True:
         engine.say('5 монет и 5 монет - 55')
         engine.runAndWait()
         eighth_q = input(f'{name}, вводите ваш ответ:\n')
-        if eighth_q == q8:
-            engine.say('Правильно')
-            count += 1
-            engine.runAndWait()
-        elif eighth_q == q8_1:
+        if eighth_q == q8 or eighth_q == q8_1:
             engine.say('Правильно')
             count += 1
             engine.runAndWait()
@@ -218,9 +221,10 @@ while True:
         engine.say('девятый вопрос')
         engine.runAndWait()
         engine.say('Что можно завязать  но нельзя развязать?')
-        engine.runAndWait()
+        engine.runAndWait())
+            engine.runAndWait()
         ninth_q = input(f'{name}, вводите ваш ответ:\n')
-        if ninth_q == q9:
+        if ninth_q == q9 or ninth_q == q9_1:
             engine.say('Правильно')
             count += 1
             engine.runAndWait()
