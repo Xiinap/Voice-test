@@ -2,29 +2,49 @@ import pyttsx3
 engine = pyttsx3.init()
 
 while True:
-    # engine.say('Введите ваше имя')
-    # engine.runAndWait()
+    engine.say('Введите ваше имя')
+    engine.runAndWait()
     name = input('Введите ваше имя:\n')
 
     if '1' in name:
+        engine.say('Ненастоящее имя')
+        engine.runAndWait()
         print('Ненастоящее имя')
     elif '2' in name:
+        engine.say('Ненастоящее имя')
+        engine.runAndWait()
         print('Ненастоящее имя')
     elif '3' in name:
+        engine.say('Ненастоящее имя')
+        engine.runAndWait()
         print('Ненастоящее имя')
     elif '4' in name:
+        engine.say('Ненастоящее имя')
+        engine.runAndWait()
         print('Ненастоящее имя')
     elif '5' in name:
+        engine.say('Ненастоящее имя')
+        engine.runAndWait()
         print('Ненастоящее имя')
     elif '6' in name:
+        engine.say('Ненастоящее имя')
+        engine.runAndWait()
         print('Ненастоящее имя')
     elif '7' in name:
+        engine.say('Ненастоящее имя')
+        engine.runAndWait()
         print('Ненастоящее имя')
     elif '8' in name:
+        engine.say('Ненастоящее имя')
+        engine.runAndWait()
         print('Ненастоящее имя')
     elif '9' in name:
+        engine.say('Ненастоящее имя')
+        engine.runAndWait()
         print('Ненастоящее имя')
     elif '0' in name:
+        engine.say('Ненастоящее имя')
+        engine.runAndWait()
         print('Ненастоящее имя')
     else:
         count = 0
